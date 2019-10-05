@@ -8,17 +8,20 @@ window.onscroll = function() {scrollFunction()};
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  //check=true;
 }
 function topFunction2() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  check=true;
 }
 function animatemenu(x) {
-    if(!check){
     x.classList.toggle("change");
-    }else{
-      check=false;
-    }
+}
+function animatemenu1(x) {
+  x.classList.toggle("change1");
+}
+function animatemenu2(x) {
+  x.classList.toggle("change2");
+}
+function animatemenu3(x) {
+  x.classList.toggle("change3");
 }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" type="text/css" href="list.css">
+	<script type="text/javascript" src="index.js"></script>
+	<title>C Programming - Program Structure ~ PR47H4M</title>
+</head>
+
+<body>
+	<div class="menudiv" id="menudiv">
+		<div class="icondiv" onclick="animatemenu(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+			<div class="uldiv">
+				<ul>
+					<li class="li1" onclick="topFunction()"><a href="home.html">HOME</a>
+					</li>
+					<li class="li2"><a href="c.html">TUTORIALS</a>
+					</li>
+					<li class="li3"><a href="#competitions">COMPETITIONS</a>
+					</li>
+					<li class="li4"><a href="cpractice.html">Practice</a>
+					</li>
+					<li class="li5"><a href="cprojects.html">PROJECTS</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="logodiv" onclick="topFunction2()">
+		<div class="loader-frame">
+			<div class="loader1" id=="loader1"></div>
+			<div class="loader2" id=="loader2"></div>
+		</div>
+		<img src="text.png" class="image">
+	</div>
+	<!----------------------------------------------------------------------------------------------------->
+	<div class="main">
+		<div class="cmenu" style="width:33%; height:5px;">
+			<ul class="cmenuul">
+				<li><font size=5><b>Topics</b></font>
+					<ul>
+						<li><font size=3>
+                    <a href="c.html">C Programming - Overview</a></font>
+						</li>
+						<li> <font size=3><a href="c1.html">C - Environment Setup</a></font>
+						</li>
+						<li> <font size=3><a href="c2.html">C - Program Structure</a></font>
+						</li>
+						<li> <font size=3><a href="c3.html">C - Basic Syntax</a></font>
+						</li>
+						<li> <font size=3><a href="c4.html">C - Data Types</a></font>
+						</li>
+						<li> <font size=3><a href="c5.html">C - Variables</a></font>
+						</li>
+						<li> <font size=3><a href="c6.html">C - Constants</a></font>
+						</li>
+						<li> <font size=3><a href="c7.html">C - Storage Classes</a></font>
+						</li>
+						<li> <font size=3><a href="c8.html">C - Operators</a></font>
+						</li>
+						<li> <font size=3><a href="c9.html">C - Decision Making</a></font>
+						</li>
+						<li> <font size=3><a href="c10.html">C - Loops</a></font>
+						</li>
+						<li> <font size=3><a href="c11.html">C - Functions</a></font>
+						</li>
+						<li> <font size=3><a href="c12.html">C - Scope Rules</a></font>
+						</li>
+						<li> <font size=3><a href="c13.html">C - Arrays</a></font>
+						</li>
+						<li> <font size=3><a href="c14.html">C - Pointers</a></font>
+						</li>
+						<li> <font size=3><a href="c15.html">C - Strings</a></font>
+						</li>
+						<li> <font size=3><a href="c16.html">C - Structures</a></font>
+						</li>
+						<li> <font size=3><a href="c17.html">C - Unions</a></font>
+						</li>
+						<li> <font size=3><a href="c18.html">C - Bit Fields</a></font>
+						</li>
+						<li> <font size=3><a href="c19.html">C - Typedef</a></font>
+						</li>
+						<li> <font size=3><a href="c20.html">C - Input & Output</a></font>
+						</li>
+						<li> <font size=3><a href="c21.html">C - File I/O</a></font>
+						</li>
+						<li> <font size=3><a href="c22.html">C - Preprocessors</a></font>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!----------------------------------------------------------------------------------------------------->
+		<div class="ccontents" style="/*width:75vw;*/ color:rgb(253, 163, 130);"> <font size=4>
+        Before we study the basic building blocks of the C programming language, let us look at a bare minimum C program structure so that we can take it as a reference in the upcoming chapters.
+    </font>
+			<br>
+			<br> <font size=5 style="color:rgb(166, 212, 166);">
+            <b>
+                Hello World Example<br>
+            </b>
+            </font>
+			<font size=4>   
+                A C program basically consists of the following parts −
+                <ul style="display: block; margin-left: 30px; list-style-type: disc;">
+                    <li>Preprocessor Commands</li>
+                    <li>Functions</li>
+                    <li>Variables</li>
+                    <li>Statements & Expressions</li>
+                    <li>Comments</li>
+                </ul>
+                Let us look at a simple code that would print the words "Hello World" −
+                <hr>
+    <font size=6 style="color:rgb(166, 212, 166);">
+        Hello World using C Programming.
+    </font>
+			<div class="sourcecode" style="margin-top:10px; margin-bottom: 10px;"> <span class="include">
+            #include
+        </span>
+				<span class="headerfile">
+            < stdio.h>
+        </span>
+				<br> <span class="keyword">
+            int
+        </span>
+				<span class="txt">
+            main(){
+        </span>
+				<br> <span class="comments" >
+            /*My first c program.*/<br>
+        </span>
+				<span class="txt" >printf(<span class="argument">"Hello, World! \n"</span>);</span>
+				<br> <span class="keyword">
+            return 
+        </span>
+				<span class="txt">
+             0;<br>
+        </span>
+				<span class="txt">}</span>
+			</div>
+			<hr>Let us take a look at the various parts of the above program −
+			<ul style="display: block; margin-left: 30px; list-style-type: disc;">
+				<li>The first line of the program #include
+					<stdio.h>is a preprocessor command, which tells a C compiler to include stdio.h file before going to actual compilation.</li>
+				<li>The next line int main() is the main function where the program execution begins</li>
+				<li>The next line /*...*/ will be ignored by the compiler and it has been put to add additional comments in the program. So such lines are called comments in the program.</li>
+				<li>The next line printf(...) is another function available in C which causes the message "Hello, World!" to be displayed on the screen.</li>
+				<li>The next line return 0; terminates the main() function and returns the value 0.</li>
+			</ul>
+			</font> <font size=6 style="color:rgb(166, 212, 166);">
+        Compile and Execute C Program
+    </font>
+			<br> <font size=4>  
+            Let us see how to save the source code in a file, and how to compile and run it. Following are the simple steps − 
+           <ul style="display: block; margin-left: 30px; list-style-type: disc;">
+                <li>Open a text editor and add the above-mentioned code.</li>
+                <li>Save the file as hello.c</li>
+                <li>Open a command prompt and go to the directory where you have saved the file.</li>
+                <li>Type gcc hello.c and press enter to compile your code.</li>
+                <li>If there are no errors in your code, the command prompt will take you to the next line and would generate a.out executable file.</li>
+                <li>Now, type a.out to execute your program.</li>
+                <li>You will see the output "Hello World" printed on the screen.</li>
+            </ul>
+            <div class="sourcecode" style="margin-top:10px; margin-bottom: 10px; color:white;">
+                    <font style="margin-left: 20px;">$ gcc hello.c<br></font>
+			<font style="margin-left: 20px;">$ ./a.out<br></font>
+			<font style="margin-left: 20px;">Hello, World!<br></font>
+		</div>Make sure the gcc compiler is in your path and that you are running it in the directory containing the source file hello.c.</font>
+		<br><center>
+			<iframe  src="https://www.youtube.com/embed/E6aWjXakM-c?autoplay=1"  allow="autoplay;gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+		<br>
+		<div class="previousbuttondiv">
+			<button class="previousbutton"><a href="c1.html"><font size=4><< Previous</font></a>
+			</button>
+		</div>
+		<div class="nextbuttondiv" style="margin-top:-40px;">
+			<button class="nextbutton"><a href="c3.html"><font size=4>Next >></font></a>
+			</button>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>

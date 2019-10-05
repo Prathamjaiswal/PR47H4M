@@ -1,7 +1,8 @@
 .logodiv{
     padding:0px;
     position: fixed;
-    left: 48%;
+    width: 50%;
+    right:0px;
     margin-top: -65px;
     /*border: 1px dotted blue;*/
 }
@@ -13,7 +14,7 @@
     position: sticky;
     top: 0;
     height: 50px;
-    width:100%;
+    width:200%;
 }
 .icondiv{
     display: inline-block;
@@ -44,10 +45,19 @@
 .change .uldiv{
     display: block;
 }
-
+.change1 .uldiv1 ul{
+    display: block;
+}
+.change2 .uldiv2 ul{
+    display: block;
+}
+.change3 .uldiv3 ul{
+    display: block;
+}
 .loader-frame{
     width: 40pX;
     height: 40PX;
+    margin-left: -25px;
     margin-top:8px;;
     position: absolute;
 }
@@ -64,6 +74,7 @@
     animation-name: clockspin;
     animation-duration: 0.8s;
     animation-delay: 0ms;
+	/*margin-left: 1685%;*/
     animation-iteration-count: infinite;
 }
 .loader2{
@@ -73,7 +84,8 @@
     border-right: 5px solid green;
     top: 5px;
     left: 5px;
-    animation-name: anticlockspin;
+    /*margin-left: 1685%;*/
+	animation-name: anticlockspin;
     animation-duration: 0.8s;
     animation-delay: 0ms;
     animation-iteration-count: infinite;
@@ -81,6 +93,7 @@
 .image{
     padding:5px;
     margin-top: 7px;
+	margin-left: -25px;
     height:40px;
     width:40px;
     animation-name: imganimation;

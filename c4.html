@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="OSS , Tutorials, Building">
+	<meta name="keywords" content="OSS , java, python, blender, html, unity engine, unreal engine, c++, c#">
+	<meta name="author" content="Pratham Jaiswal">
+	<meta name="robot" content="index,follow">
+	<meta http-equiv="refresh" content="1200">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" type="text/css" href="list.css">
+	<script type="text/javascript" src="index.js"></script>
+	<title>C Programming - Data Types ~ PR47H4M</title>
+</head>
+
+<body>
+	<div class="menudiv" id="menudiv">
+		<div class="icondiv" onclick="animatemenu(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+			<div class="uldiv">
+				<ul>
+					<li class="li1" onclick="topFunction()"><a href="home.html">HOME</a>
+					</li>
+					<li class="li2"><a href="c.html">TUTORIALS</a>
+					</li>
+					<li class="li3"><a href="#competitions">COMPETITIONS</a>
+					</li>
+					<li class="li4"><a href="cpractice.html">Practice</a>
+					</li>
+					<li class="li5"><a href="cprojects.html">PROJECTS</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="logodiv" onclick="topFunction2()">
+		<div class="loader-frame">
+			<div class="loader1" id=="loader1"></div>
+			<div class="loader2" id=="loader2"></div>
+		</div>
+		<img src="text.png" class="image">
+	</div>
+	<!--------------------------------------------------------------------------------------------------------->
+	<div class="main">
+		<div class="cmenu" style="width:33%; height:5px;">
+			<ul class="cmenuul">
+				<li><font size=5><b>Topics</b></font>
+					<ul>
+						<li><font size=3>
+                        <a href="c.html">C Programming - Overview</a></font>
+						</li>
+						<li> <font size=3><a href="c1.html">C - Environment Setup</a></font>
+						</li>
+						<li> <font size=3><a href="c2.html">C - Program Structure</a></font>
+						</li>
+						<li> <font size=3><a href="c3.html">C - Basic Syntax</a></font>
+						</li>
+						<li> <font size=3><a href="c4.html">C - Data Types</a></font>
+						</li>
+						<li> <font size=3><a href="c5.html">C - Variables</a></font>
+						</li>
+						<li> <font size=3><a href="c6.html">C - Constants</a></font>
+						</li>
+						<li> <font size=3><a href="c7.html">C - Storage Classes</a></font>
+						</li>
+						<li> <font size=3><a href="c8.html">C - Operators</a></font>
+						</li>
+						<li> <font size=3><a href="c9.html">C - Decision Making</a></font>
+						</li>
+						<li> <font size=3><a href="c10.html">C - Loops</a></font>
+						</li>
+						<li> <font size=3><a href="c11.html">C - Functions</a></font>
+						</li>
+						<li> <font size=3><a href="c12.html">C - Scope Rules</a></font>
+						</li>
+						<li> <font size=3><a href="c13.html">C - Arrays</a></font>
+						</li>
+						<li> <font size=3><a href="c14.html">C - Pointers</a></font>
+						</li>
+						<li> <font size=3><a href="c15.html">C - Strings</a></font>
+						</li>
+						<li> <font size=3><a href="c16.html">C - Structures</a></font>
+						</li>
+						<li> <font size=3><a href="c17.html">C - Unions</a></font>
+						</li>
+						<li> <font size=3><a href="c18.html">C - Bit Fields</a></font>
+						</li>
+						<li> <font size=3><a href="c19.html">C - Typedef</a></font>
+						</li>
+						<li> <font size=3><a href="c20.html">C - Input & Output</a></font>
+						</li>
+						<li> <font size=3><a href="c21.html">C - File I/O</a></font>
+						</li>
+						<li> <font size=3><a href="c22.html">C - Preprocessors</a></font>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--------------------------------------------------------------------------------------------------------->
+		<div class="ccontents" style="/*width:75vw;*/ color:rgb(253, 163, 130);"> <font size=4>
+            Data types in c refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.
+<br>
+            The types in C can be classified as follows −
+            </font>
+			<br> <font color="white">
+<table class="tabledata2" >
+<tr>
+    <td><font size=5>Sr. No.</font>
+			</td>
+			<td><font size=5>Types & Description</font>
+			</td>
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td><b>Basic Types</b>
+					<br>They are arithmetic types and are further classified into: (a) integer types and (b) floating-point types.</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td><b>Enumerated Types</b>
+					<br>They are again arithmetic types and they are used to define variables that can only assign certain discrete integer values throughout the program.</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td><b>The Type Void</b>
+					<br>The type specifier void indicates that no value is available.</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td><b>Derived Types</b>
+					<br>They include (a) Pointer types, (b) Array types, (c) Structure types, (d) Union types and (e) Function types.</td>
+			</tr>
+			</table>
+			<br>
+			</font>	<font size=4>
+    The array types and structure types are referred collectively as the aggregate types. The type of a function specifies the type of the function's return value. We will see the basic types in the following section, where as other types will be covered in the upcoming chapters.
+</font>
+			<font size=5 style="color:rgb(166, 212, 166);">
+    <br>Integer Types<br>
+</font>
+			<font size=4>
+    The following table provides the details of standard integer types with their storage sizes and value ranges −
+</font><font color="white">
+<table class="tabledata2">
+    <tr>
+        <td><font size=5>Type</font>
+			</td>
+			<td><font size=5>Storage Size</font>
+			</td>
+			<td><font size=5>Value Range</font>
+			</td>
+			</tr>
+			<tr>
+				<td>char</td>
+				<td>1 byte</td>
+				<td>-128 to 127 or 0 to 255</td>
+			</tr>
+			<tr>
+				<td>unsigned char</td>
+				<td>1 byte</td>
+				<td>0 to 255</td>
+			</tr>
+			<tr>
+				<td>signed char</td>
+				<td>1 byte</td>
+				<td>-128 to 127</td>
+			</tr>
+			<tr>
+				<td>int</td>
+				<td>2 or 4 bytes</td>
+				<td>-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647</td>
+			</tr>
+			<tr>
+				<td>unsigned int</td>
+				<td>2 or 4 bytes</td>
+				<td>0 to 65,535 or 0 to 4,294,967,295</td>
+			</tr>
+			<tr>
+				<td>short</td>
+				<td>2 bytes</td>
+				<td>-32,768 to 32,767</td>
+			</tr>
+			<tr>
+				<td>unsigned short</td>
+				<td>2 bytes</td>
+				<td>0 to 65,535</td>
+			</tr>
+			<tr>
+				<td>long</td>
+				<td>8 bytes</td>
+				<td>-9223372036854775808 to 9223372036854775807</td>
+			</tr>
+			<tr>
+				<td>unsigned long</td>
+				<td>8 bytes</td>
+				<td>0 to 18446744073709551615</td>
+			</tr>
+			</table>
+			<br>
+			</font>	<font size=4>
+    To get the exact size of a type or a variable on a particular platform, you can use the sizeof operator. The expressions sizeof(type) yields the storage size of the object or type in bytes. Given below is an example to get the size of various type on a machine using different constant defined in limits.h header file −
+</font>
+			<div class="sourcecode"> <span class="include">
+#include
+    </span>
+				<span class="headerfile">
+< stdio.h>
+</span>
+				<br> <span class="include">
+                    #include
+                </span>
+				<span class="headerfile">
+                    < stdlib.h>
+                </span>
+				<br> <span class="include">
+                    #include
+                </span>
+				<span class="headerfile">
+                    < limits.h>
+                </span>
+				<br> <span class="include">
+                    #include
+                </span>
+				<span class="headerfile">
+                    < float.h>
+                 </span>
+				<br> <span class="keyword">
+                int
+                 </span>
+				<span class="txt">
+                    main(
+                </span>
+				<span class="keyword">
+                int
+            </span>
+				<span class="txt">
+                argc,
+            </span>
+				<span class="keyword">
+                char**
+            </span>
+				<span class="txt">
+                argv) {
+            </span>
+				<br> <span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "CHAR_BIT    :   %d\n"
+            </span>
+				<span class="txt">
+                , CHAR_BIT);<br>
+            </span><span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "CHAR_MAX    :   %d\n"
+            </span>
+				<span class="txt">
+                , CHAR_MAX);<br>
+            </span><span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "CHAR_MIN    :   %d\n"
+            </span>
+				<span class="txt">
+                , CHAR_MIN);<br>
+            </span><span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "INT_MAX     :   %d\n"
+            </span>
+				<span class="txt">
+                , INT_MAX);<br>
+            </span><span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "INT_MIN     :   %d\n"
+            </span>
+				<span class="txt">
+                , INT_MIN);<br>
+            </span><span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "LONG_MAX    :   %ld\n"
+            </span>
+				<span class="txt">
+                , (<span class="keyword">long</span>) LONG_MAX);
+				<br>
+				</span><span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "LONG_MIN    :   %ld\n"
+            </span>
+				<span class="txt">
+                , (<span class="keyword">long</span>) LONG_MIN);
+				<br>
+				</span><span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "SCHAR_MAX   :   %d\n"
+            </span>
+				<span class="txt">
+                , SCHAR_MAX);<br>
+            </span>
+				<span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "SCHAR_MIN   :   %d\n"
+            </span>
+				<span class="txt">
+                , SCHAR_MIN);<br>
+            </span>
+				<span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "SHRT_MAX    :   %d\n"
+            </span>
+				<span class="txt">
+                , SHRT_MAX);<br>
+            </span>
+				<span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "SHRT_MIN    :   %d\n"
+            </span>
+				<span class="txt">
+                , SHRT_MIN);<br>
+            </span>
+				<span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "UCHAR_MAX   :   %d\n"
+            </span>
+				<span class="txt">
+                , UCHAR_MAX);<br>
+            </span>
+				<span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "UINT_MAX    :   %u\n"
+            </span>
+				<span class="txt">
+                , (<span class="keyword">unsigned int</span>) UINT_MAX);
+				<br>
+				</span> <span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "ULONG_MAX   :   %lu\n"
+            </span>
+				<span class="txt">
+                , (<span class="keyword">unsigned long</span>) ULONG_MAX);
+				<br>
+				</span> <span class="txt">
+                printf(
+            </span>
+				<span class="argument">
+                "USHRT_MAX   :   %d\n"
+            </span>
+				<span class="txt">
+                , (<span class="keyword">unsigned short</span>) USHRT_MAX);
+				<br>
+				</span>
+				<span class="keyword">return </span>
+				<span  class="txt">0;<br>}</span>
+			</div>
+<font size=4>
+    When you compile and execute the above program, it produces the following result on Linux −<br>
+</font>
+			<div class="sourcecode">
+				<div style="margin-left: 20px;"><span class="txt" >
+                    CHAR_BIT    :   8<br>
+                    CHAR_MAX    :   127
+                    CHAR_MIN    :   -128<br>
+                    INT_MAX     :   2147483647<br>
+                    INT_MIN     :   -2147483648<br>
+                    LONG_MAX    :   9223372036854775807<br>
+                    LONG_MIN    :   -9223372036854775808<br>
+                    SCHAR_MAX   :   127<br>
+                    SCHAR_MIN   :   -128<br>
+                    SHRT_MAX    :   32767<br>
+                    SHRT_MIN    :   -32768<br>
+                    UCHAR_MAX   :   255<br>
+                    UINT_MAX    :   4294967295<br>
+                    ULONG_MAX   :   18446744073709551615<br>
+                    USHRT_MAX   :   65535
+                </span>
+				</div>
+			</div> <font size=5 style="color:rgb(166, 212, 166);">
+                <br>Floating-Point Types<br>
+            </font>
+			<font size=4>
+    The following table provide the details of standard floating-point types with storage sizes and value ranges and their precision −
+
+</font><font color="white">
+<table class="tabledata2">
+    <tr>
+        <td><font size=5>Type</font>
+			</td>
+			<td><font size=5>Storage Size</font>
+			</td>
+			<td><font size=5>Value Range</font>
+			</td>
+			<td><font size=5>Precision</font>
+			</td>
+			</tr>
+			<tr>
+				<td>float</td>
+				<td>4 bytes</td>
+				<td>1.2E-38 to 3.4E+38</td>
+				<td>6 decimal places</td>
+			</tr>
+			<tr>
+				<td>double</td>
+				<td>8 bytes</td>
+				<td>2.3E-308 to 1.7E+308</td>
+				<td>15 decimal places</td>
+			</tr>
+			<tr>
+				<td>long double</td>
+				<td>10 bytes</td>
+				<td>3.4E-4932 to 1.1E+4932</td>
+				<td>19 decimal places</td>
+			</tr>
+			</table>
+			</font>	<font size=4>
+    The header file float.h defines macros that allow you to use these values and other details about the binary representation of real numbers in your programs. The following example prints the storage space taken by a float type and its range values −
+</font>
+			<div class="sourcecode">
+				<div style="margin-left: 20px;"> <span class="include">#include</span>
+					<span class="headerfile">< stdio.h></span>
+					<br> <span class="include">#include</span>
+					<span class="headerfile">< stdlib.h></span>
+					<br> <span class="include">#include</span>
+					<span class="headerfile">< limits.h></span>
+					<br> <span class="include">#include</span>
+					<span class="headerfile">< float.h></span>
+					<br> <span class="keyword">int</span>
+					<span class="txt">main(<span class="keyword">int </span>argc, <span class="keyword">char** </span>argv){</span>
+					<br> <span class="txt">
+                printf(
+            </span>
+					<span class="argument">
+                    "Storage size for float : %d \n"
+            </span>
+					<span class="txt">
+                    , sizeof(float));<br>
+                </span>  <span class="txt">
+                    printf(
+                </span>
+					<span class="argument">
+                        "FLT_MAX     :   %g\n"
+                </span>
+					<span class="txt">
+                        , (<span class="keyword">float</span>) FLT_MAX);
+					<br>
+					</span> <span class="txt">
+                        printf(
+                    </span>
+					<span class="argument">
+                            "FLT_MIN     :   %g\n"
+                    </span>
+					<span class="txt">
+                            , (<span class="keyword">float</span>) FLT_MIN);
+					<br>
+					</span> <span class="txt">
+                            printf(
+                        </span>
+					<span class="argument">
+                                "-FLT_MAX     :   %g\n"
+                        </span>
+					<span class="txt">
+                                , (<span class="keyword">float</span>) -FLT_MAX);
+					<br>
+					</span> <span class="txt">
+                            printf(
+                        </span>
+					<span class="argument">
+                                "-FLT_MIN     :   %g\n"
+                        </span>
+					<span class="txt">
+                                , (<span class="keyword">float</span>) -FLT_MIN);
+					<br>
+					</span> <span class="txt">
+                                printf(
+                            </span>
+					<span class="argument">
+                                    "DBL_MAX     :   %g\n"
+                            </span>
+					<span class="txt">
+                                    , (<span class="keyword">double</span>) DBL_MAX);
+					<br>
+					</span> <span class="txt">
+                                    printf(
+                                </span>
+					<span class="argument">
+                                        "DBL_MIN     :   %g\n"
+                                </span>
+					<span class="txt">
+                                        , (<span class="keyword">double</span>) DBL_MIN);
+					<br>
+					</span> <span class="txt">
+                                        printf(
+                                    </span>
+					<span class="argument">
+                                            "-DBL_MAX     :   %g\n"
+                                    </span>
+					<span class="txt">
+                                            , (<span class="keyword">double</span>) -DBL_MAX);
+					<br>
+					</span> <span class="txt">
+                                            printf(
+                                        </span>
+					<span class="argument">
+                                                "Precision value: %d\n"
+                                        </span>
+					<span class="txt">
+                                                , FLT_DIG );<br>
+                                            </span>
+					<span class="keyword">return </span>
+					<span class="txt">0;<br>}</span>
+				</div>
+			</div> <font size=4>When you compile and execute the above program, it produces the following result on Linux −</font>
+			<br>
+			<div class="sourcecode">
+				<div style="margin-left: 20px;"><span class="txt" style="margin-left: 0px;">
+                        Storage size for float : 4 <br>
+                        FLT_MAX      :   3.40282e+38 <br>
+                        FLT_MIN      :   1.17549e-38 <br>
+                        -FLT_MAX     :   -3.40282e+38 <br>
+                        -FLT_MIN     :   -1.17549e-38 <br>
+                        DBL_MAX      :   1.79769e+308 <br>
+                        DBL_MIN      :   2.22507e-308 <br>
+                        -DBL_MAX     :  -1.79769e+308 <br>
+                        Precision value: 6 <br>
+                    </span>
+				</div>
+			</div> <font size=5>The void Type<br></font>
+			<font size=4>
+    The void type specifies that no value is available. It is used in three kinds of situations −<br>
+</font>
+			<font color="white">
+    <table class="tabledata2" >
+    <tr>
+        <td><font size=5>Sr. No.</font>
+			</td>
+			<td><font size=5>Types & Description</font>
+			</td>
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td><b>Function returns as void</b>
+					<br>There are various functions in C which do not return any value or you can say they return void. A function with no return value has the return type as void. For example, void exit (int status);</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td><b>Function arguments as void</b>
+					<br>There are various functions in C which do not accept any parameter. A function with no parameter can accept a void. For example, int rand(void);</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td><b>Pointers to void</b>
+					<br>A pointer of type void * represents the address of an object, but not its type. For example, a memory allocation function void *malloc( size_t size ); returns a pointer to void which can be casted to any data type.</td>
+			</tr>
+			</table>
+			<br>
+			</font>
+			<br>
+			<br>
+			<div class="previousbuttondiv">
+				<button class="previousbutton"><a href="c3.html"><font size=4><< Previous</font></a>
+				</button>
+			</div>
+			<div class="nextbuttondiv" style="margin-top:-40px;">
+				<button class="nextbutton"><a href="c5.html"><font size=4>Next >></font></a>
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
